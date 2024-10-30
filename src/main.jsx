@@ -4,7 +4,8 @@ import './main.scss'
 import { Router as Routes } from './routes/router'
 
 /**
- * Initialize and render the application.
+ * Ce code configure l'application React et définit des styles de base pour
+  une mise en page responsive et accessible.
  *
  * @returns {void}
  */

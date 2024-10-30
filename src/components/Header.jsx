@@ -1,12 +1,15 @@
 import links from '../data/mainNav.json'
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'/*la bibliothèque prop-types, qui est utilisée
+ pour définir des types de propriétés pour les composants React. Cela permet de valider les
+ props passées aux composants et d'assurer qu'elles sont du bon type.*/
 import { NavLink } from 'react-router-dom'
 import './Header.scss'
-import Logo from './Logo'
+import Logo from './Logo'//appelé Logo
 import Nav from './Nav'
 
 /**
- * Represents the header component of the application.
+ * composant représente l'en-tête de l'application et décrit les paramètres 
+ * qu'il prend ainsi que ce qu'il retourne.
  *
  * @param {Object[]} links - The links to display in the header.
  * @returns {JSX.Element} The header component.

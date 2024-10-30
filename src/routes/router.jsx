@@ -2,7 +2,7 @@ import App from '../layouts/App'
 import About from '../pages/About'
 import Accommodation from '../pages/Accommodation'
 import Home from '../pages/Home'
-//import NotFound from '../pages/NotFound'
+import NotFound from '../pages/NotFound'
 import { Navigate, RouterProvider, createBrowserRouter } from 'react-router-dom'
 
 /**
@@ -27,6 +27,14 @@ export function Router() {
                 {
                     path: 'logement/:id',
                     element: <Accommodation />,
+                },
+                {
+                    path: '404',
+                    element: <NotFound />,
+                },
+                {
+                    path: '*',
+                    element: <Navigate to="/404" />,
                 },
                
             ],
